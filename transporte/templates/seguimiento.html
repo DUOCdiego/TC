@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento de Paquete</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Seguimiento de Paquete</h2>
+
+  <form>
+    <label for="codigo">Código de Seguimiento:</label>
+    <input type="text" id="codigo" name="codigo" placeholder="Ingrese el código de seguimiento" required>
+
+    <label for="destinatario">Nombre del Destinatario:</label>
+    <input type="text" id="destinatario" name="destinatario" placeholder="Ingrese el nombre del destinatario" required>
+
+    <label for="origen">Lugar de Origen:</label>
+    <input type="text" id="origen" name="origen" placeholder="Ingrese el lugar de origen" required>
+
+    <label for="destino">Lugar de Destino:</label>
+    <input type="text" id="destino" name="destino" placeholder="Ingrese el lugar de destino" required>
+
+    <button type="button" onclick="realizarSeguimiento()">Realizar Seguimiento</button>
+  </form>
+
+  <script>
+    function realizarSeguimiento() {
+      // Aquí puedes agregar lógica para realizar el seguimiento del paquete.
+      // Puedes mostrar mensajes, redirigir a otra página, etc.
+      alert('Seguimiento realizado con éxito. ¡Información ficticia ingresada!');
+    }
+  </script>
+
+</body>
+</html>

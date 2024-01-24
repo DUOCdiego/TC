@@ -10,7 +10,7 @@ def producto_index(request):
 
 # Create your views here.
 def data(request):
-    for _ in range(10):
+    for _ in range(100):
         Producto.objects.create(
             nombre=fake.word(),
             descripcion=fake.text(),
@@ -19,13 +19,13 @@ def data(request):
         )
 
     # Generar datos ficticios para solicitudes y detalles
-    for _ in range(5):
+    for _ in range(20):
         solicitud = Solicitud.objects.create(
             nombre_solicitante=fake.name(),
             direccion_solicitante=fake.address()
         )
 
-        for _ in range(3):
+        for _ in range(5):
             producto = Producto.objects.order_by('?').first()
             DetalleSolicitud.objects.create(
                 producto=producto,

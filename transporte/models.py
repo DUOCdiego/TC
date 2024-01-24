@@ -19,3 +19,5 @@ class SolicitudTransporte(models.Model):
 
     def __str__(self):
         return f"Solicitud {self.codigo_seguimiento} - {self.estado}"
+    
+    

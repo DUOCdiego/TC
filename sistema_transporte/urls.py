@@ -22,4 +22,5 @@ urlpatterns = [
     path('transporte/', include('transporte.urls')),
     path('bodega/', include('bodega.urls')),
     path('api/', include('apitransporte.urls')),
+    path('api/transporte/v1/', include('apitransporte')),
 ]
